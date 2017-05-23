@@ -19,7 +19,7 @@ var app = app || {};
       }
     })
     .then( data => {
-      console.log(data);
+      repos.all = data;
     }
     )
   };
