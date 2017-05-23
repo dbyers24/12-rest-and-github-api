@@ -18,8 +18,9 @@ var app = app || {};
         Authorization: `token ${myDamnGithubToken}`
       }
     })
-    .then( data => {
-      repos.all = data;
+    .then(data => {
+      repos.all = data,
+      callback()
     }
     )
   };
